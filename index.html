@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>ACTIVIDAD DE RECUPERACIÓN</title>
+		<link rel="stylesheet" href="js.css">
+<style>
+	body{
+	background:url(fnd2.jpg);
+	background-size: 100%;
+}
+	.uno{
+	position: absolute;
+	height:500px;
+	width: 1250px;
+	left:50px;
+	top:50px;
+	border:4px solid  ;
+	border-image: linear-gradient(blue, white, red);
+	border-image-slice: 1;
+}
+.dos{
+	position: relative;
+	height:50px;
+	width: 50px;
+	left:150px;
+	top:150px;
+	border:4px solid  ;
+	border-image: linear-gradient(blue, white, red);
+	border-image-slice: 1;
+}
+</style>
+
+	</head>
+	<body>
+		<div id="cuadro" class="uno">
+			<div onload="time()" id="mini" class="dos"></div>
+		</div>
+		<script>
+			b=1;
+		numx= 50;	
+		tiempo= 20;
+		
+var time = function (){    
+    numx=numx+20;
+mini.style.left=numx+"px";
+}
+a=setInterval(time,500);
+		</script>
+
+	</body>
+</html>
